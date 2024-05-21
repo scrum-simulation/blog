@@ -62,22 +62,30 @@ img {
       }
       
       
-      /* footer {
-        background-color: #E5E5E5;
-        padding: 20px;
+      footer {
+        margin: 0 auto;
         text-align: center;
-      } */
+      }
       
-      /* footer nav ul {
-        justify-content: center;
-        margin-bottom: 20px;
+       footer nav ul {
+        margin-bottom: 0;
+        padding-bottom: 0;
+      }
+
+      address p {
+        margin-top: 0;
       }
       
       footer address {
-        margin-bottom: 20px;
+        margin-bottom: 0;
+
       }
-      
-      footer p.credit {
+       footer p.credit {
         font-size: 0.8rem;
+        background-color: #333;
         color: #666;
-      } */
+        width: 50%;
+        margin: 0 auto;
+        height: 20px;
+        padding-top: 3px 
+      }  
