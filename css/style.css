@@ -11,7 +11,7 @@
    text-align: center;
  }
 
-img {
+/* img {
     width: 50%;
     margin: 0 auto;
     object-fit: cover;
@@ -49,7 +49,7 @@ img {
       
       .card-custom {
         max-width: 600px;
-      }
+      } */
       
       /* main {
         text-align: center;
