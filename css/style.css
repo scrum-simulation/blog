@@ -47,14 +47,18 @@ img {
         display: block;
       }
       
-      main {
+      .card-custom {
+        max-width: 600px;
+      }
+      
+      /* main {
         text-align: center;
         width: 50%;
         margin: 0 auto;
         padding: 20px;
         background-color: #f9f9f9;
         border: 1px solid #ddd;
-      }
+      } */
       
       .post-title {
         font-size: 2rem;
