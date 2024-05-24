@@ -4,40 +4,82 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Us</title>
+  <!-- Bootstrap CSS link -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="contact.css">
 </head>
 <body>
 
 <!-- Contact Us Section -->
 <section class="contact-section">
-  <h2>Contact Us</h2>
-  <p>Feel free to reach out to us through the following:</p>
-  <ul>
-    <li>Email: www.Journey.com</li>
-    <li>Phone: 123-456-7890</li>
-    <li>Social Media:
-      <a href="#">Twitter</a>,
-      <a href="#">Facebook</a>,
-      <a href="#">Instagram</a>
-    </li>
-  </ul>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <h2>Contact Us</h2>
+        <p>Feel free to reach out to us through the following:</p>
+        <ul>
+          <li>Email: www.Journey.com</li>
+          <li>Phone: 123-456-7890</li>
+          <li>Social Media:
+            <a href="#">Twitter</a>,
+            <a href="#">Facebook</a>,
+            <a href="#">Instagram</a>
+          </li>
+        </ul>
 
-  <!-- Contact Form -->
-  <form class="contact-form">
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" required>
-    
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
-    
-    <label for="message">Message:</label>
-    <textarea id="message" name="message" rows="4" required></textarea>
-    
-    <div>
-      <button type="submit">Submit</button>
+        <!-- Contact Form -->
+        <form class="contact-form">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" class="form-control" id="name" name="name" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+          </div>
+          
+          <div class="form-group">
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </form>
+      </div>
     </div>
-  </form>
+  </div>
 </section>
+
+<!-- Bootstrap JS link -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- JavaScript for displaying success message -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelector('.contact-form').addEventListener('submit', function (event) {
+      event.preventDefault(); // Prevent default form submission
+      // Display success alert
+      showAlert();
+    });
+  });
+
+  function showAlert() {
+    // Create Bootstrap alert
+    var alert = document.createElement('div');
+    alert.classList.add('alert', 'alert-success', 'alert-dismissible', 'fade', 'show');
+    alert.innerHTML = `<strong>Success!</strong> Message sent.`
+      + `<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+      </button>`;
+    // Append alert to body
+    document.body.appendChild(alert);
+  }
+</script>
 
 </body>
 </html>
