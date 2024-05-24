@@ -7,9 +7,13 @@ body {
 
 .about-us {
     text-align: center;
-    width: 50%;
+    width: 80%;
     margin: 0 auto;
-    padding: 20px;
+    padding: 40px 20px;
     background-color: #f9f9f9;
     border: 1px solid #ddd;
+}
+
+.about-text {
+    text-align:center;
 }
